@@ -1,9 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+##### Exercise week 3 - Coursera Data Science: R Programming
+# Matrix function (and it inverse) stored in cache memory
+# Goal: optimize computing time to get the inverse matrix result 
 
-## Write a short comment describing this function
+# makeCacheMatrix make an object that can cache its inverse
 
-akeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y) {
                 x <<- y
@@ -22,7 +23,7 @@ akeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## "cacheSolve" make the inverse of makeCacheMatrix function
 
 cacheSolve <- function(x, ...) {
         inv <- x$getInverse()
